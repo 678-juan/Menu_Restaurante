@@ -1,4 +1,5 @@
-// Preferencias visuales y cierre de sesi?n del administrador.
+import { cerrarSesion } from "../../../../compartido/js/supabase/autenticacion.js";
+
 export function configurarAjustesAdministrador() {
 
   const menu = document.querySelector("[data-settings-menu]");
@@ -21,10 +22,15 @@ export function configurarAjustesAdministrador() {
 
   });
 
-  document.querySelector("[data-logout]")?.addEventListener("click", () => {
-
+  document.querySelector("[data-logout]")?.addEventListener("click", async () => {
+    const boton = document.querySelector("[data-logout]");
+    boton.disabled = true;
+    const { error } = await cerrarSesion();
+    if (error) {
+      boton.disabled = false;
+      return;
+    }
     window.location.href = "../inicio-sesion/inicio-sesion.html";
-
   });
 
 }
