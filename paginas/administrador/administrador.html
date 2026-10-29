@@ -1,0 +1,161 @@
+<!doctype html>
+
+<html lang="es">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>La Mesa | Panel Administrador</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/administrador.css" />
+
+  </head>
+
+  <body>
+
+    <main class="admin-page" data-admin-screen="dashboard">
+
+      <header class="admin-header">
+
+        <a class="admin-brand" href="../principal/principal.html"><span class="admin-logo">M</span><strong>La Mesa</strong></a>
+
+        <button class="settings-trigger" type="button" data-settings-toggle><img src="../../recursos/iconos/ajustes.svg" alt="" /> Ajustes</button>
+
+        <div class="settings-menu is-hidden" data-settings-menu>
+
+          <strong>Tema</strong>
+
+          <div class="theme-switch"><button type="button" class="is-selected" data-theme="light">☼</button><button type="button" data-theme="dark">☾</button></div>
+
+          <hr />
+
+          <button type="button" class="logout-button" data-logout>♙ <span>Cerrar Sesión</span></button>
+
+        </div>
+
+      </header>
+
+
+
+      <section class="admin-screen" data-admin-view="dashboard">
+
+        <span class="admin-kicker">Panel de administrador</span>
+
+        <h1>Bienvenido,<br />Administrador</h1>
+
+        <p class="admin-lead">Gestiona el menú de tu restaurante en tiempo real</p>
+
+        <div class="action-grid">
+
+          <article class="action-card">
+
+            <span class="action-icon action-icon--accent">+</span>
+
+            <h2>Agregar nuevo producto</h2>
+
+            <p>Crea platos, bebidas o postres y publícalos de inmediato en el menú digital.</p>
+
+            <a href="#" data-admin-link="create">Comenzar a crear <span>→</span></a>
+
+          </article>
+
+          <article class="action-card">
+
+            <span class="action-icon action-icon--dark">╱</span>
+
+            <h2>Modificar producto existente</h2>
+
+            <p>Edita precios, descripciones, categorías o disponibilidad de tu oferta actual.</p>
+
+            <a href="#" data-admin-link="edit">Ver catálogo completo <span>→</span></a>
+
+          </article>
+
+        </div>
+
+        <div class="stats-grid"><div><small>Platos / Postres</small><strong>24</strong></div><div><small>Bebidas / Vinos</small><strong>12</strong></div></div>
+
+      </section>
+
+
+
+      <section class="admin-screen is-hidden" data-admin-view="create">
+
+        <a class="admin-back" href="#" data-admin-link="dashboard">‹ &nbsp;Volver</a>
+
+        <span class="admin-kicker">Panel de administrador</span>
+
+        <h1 class="page-title">Agregar nuevo producto</h1>
+
+        <p class="page-copy">Crea un plato, bebida o postre y publícalo de inmediato en el menú digital.</p>
+
+        <form class="product-form" data-product-form>
+
+          <label>Imagen del plato</label>
+
+          <label class="upload-box"><img src="../../recursos/iconos/camara.svg" alt="" /><strong>Subir imagen del plato</strong><small>Formatos recomendados: JPG, PNG (Max 5MB)</small><input type="file" accept="image/png,image/jpeg" /></label>
+
+          <label for="new-title">Título del plato</label><input id="new-title" type="text" placeholder="Ej: Risotto de Trufa y Hongos" required />
+
+          <label for="new-description">Subtítulo / Descripción</label><textarea id="new-description" placeholder="Descripción detallada del plato, ingredientes clave, notas de cocción..." required></textarea>
+
+          <label for="new-price">Precio</label><div class="money-input"><span>$</span><input id="new-price" type="text" placeholder="Ej: 45,900" required /></div>
+
+          <fieldset><legend>Etiqueta - Tipo de comida</legend><div class="tag-list"><button type="button">ENTRADA</button><button type="button">PLATO FUERTE</button><button type="button" class="is-active">POSTRE</button><button type="button">BEBIDAS</button><button type="button">SOPAS</button><button type="button">OTRA&nbsp; ⊕</button></div></fieldset>
+
+          <fieldset><legend>Etiqueta - Adjetivo (Opcional)</legend><div class="tag-list"><button type="button" class="is-active">GLUTEN FREE</button><button type="button">CLASICO</button><button type="button">PICANTE</button><button type="button">PREMIUM</button><button type="button">FIRME</button><button type="button">DULCE</button><button type="button">OTRA&nbsp; ⊕</button></div></fieldset>
+
+          <button class="admin-submit" type="submit">Publicar Producto</button><button class="admin-cancel" type="button" data-admin-link="dashboard">Cancelar y volver</button>
+
+        </form>
+
+      </section>
+
+
+
+      <section class="admin-screen is-hidden" data-admin-view="edit">
+
+        <a class="admin-back" href="#" data-admin-link="dashboard">‹ &nbsp;Volver</a>
+
+        <span class="admin-kicker">Panel de administrador</span><h1 class="page-title">Modificar producto</h1><p class="page-copy">Edita los datos del plato y guarda los cambios para actualizar el menú digital.</p>
+
+        <form class="product-form" data-product-form>
+
+          <label>Imagen del plato</label><img class="product-image" src="../../recursos/productos/salmon.png" alt="Salmón a la parrilla" />
+
+          <label for="edit-title">Título del plato</label><input id="edit-title" type="text" value="Salmón a la Parrilla" required />
+
+          <label for="edit-description">Subtítulo / Descripción</label><textarea id="edit-description" required>Filete de salmón salvaje al grill sobre un puré aterciopelado de tomate, espárragos frescos tiernos y reducción de cítricos.</textarea>
+
+          <label for="edit-price">Precio</label><div class="money-input"><span>$</span><input id="edit-price" type="text" value="59,900" required /></div>
+
+          <fieldset><legend>Etiqueta - Tipo de comida</legend><div class="tag-list"><button type="button">ENTRADA</button><button type="button" class="is-active">PLATO FUERTE</button><button type="button">POSTRE</button><button type="button">BEBIDAS</button><button type="button">SOPAS</button><button type="button">OTRA&nbsp; ⊕</button></div></fieldset>
+
+          <fieldset><legend>Etiqueta - Adjetivo (Opcional)</legend><div class="tag-list"><button type="button" class="is-active">GLUTEN FREE</button><button type="button">CLASICO</button><button type="button">PICANTE</button><button type="button">PREMIUM</button><button type="button">FIRME</button><button type="button">DULCE</button><button type="button">OTRA&nbsp; ⊕</button></div></fieldset>
+
+          <button class="admin-submit" type="submit">Guardar Cambios</button><button class="admin-cancel" type="button" data-admin-link="dashboard">Cancelar y volver</button><button class="delete-button" type="button">Eliminar producto</button>
+
+        </form>
+
+      </section>
+
+      <footer class="admin-footer">© 2026 La Mesa • Panel de Control Administrador</footer>
+
+      <p class="admin-feedback" role="status" aria-live="polite"></p>
+
+    </main>
+
+    <script type="module" src="js/administrador-app.js"></script>
+
+  </body>
+
+</html>

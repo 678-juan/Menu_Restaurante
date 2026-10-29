@@ -1,0 +1,17 @@
+.auth-page { display: grid; grid-template-columns: minmax(0, 1fr) 720px; min-height: 100vh; background: var(--color-background); }
+
+.promo-panel { position: relative; display: flex; flex-direction: column; justify-content: space-between; min-height: 100vh; overflow: hidden; padding: 64px; color: #fff; background: linear-gradient(var(--color-overlay), var(--color-overlay)), url("../../../recursos/imagenes/inicio-sesion-escritorio.png") center / cover; }
+
+.promo-panel::before { position: absolute; inset: 0; z-index: 0; content: ""; background: linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.1)); }
+
+.promo-brand, .promo-content, .promo-meta { position: relative; z-index: 1; }
+
+.promo-content { max-width: 600px; }.promo-content h1 { margin: 0 0 24px; font: 700 48px/1.15 var(--font-display); }.promo-content p { max-width: 600px; margin: 0; color: rgba(250,248,245,.8); font-size: 16px; line-height: 1.5; }
+
+.promo-meta { display: flex; align-items: center; gap: 16px; }.promo-meta span { width: 32px; height: 1px; background: rgba(255,255,255,.4); }.promo-meta small { color: rgba(255,255,255,.6); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+
+.auth-content { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: space-between; min-height: 100vh; }
+
+.auth-wrapper { display: flex; flex-direction: column; align-items: center; width: 420px; padding: 40px 0; }.screen { width: 100%; }.screen.is-hidden, .promo-content.is-hidden { display: none; }
+
+.auth-footer { width: 100%; padding: 14px; background: var(--color-ink); color: rgba(250,248,245,.5); text-align: center; font-size: 10px; }.mobile-status { display: none; }.feedback { position: fixed; bottom: 60px; color: var(--color-accent); font-size: 12px; }

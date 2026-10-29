@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="es">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>La Mesa | Menú</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/principal.css" />
+
+  </head>
+
+  <body>
+
+    <main class="menu-page" data-theme="light">
+
+      <header class="menu-header">
+
+        <a class="menu-brand" href="principal.html"><span class="brand-mark">M</span><strong>La Mesa</strong></a>
+
+        <div class="header-actions">
+
+          <button class="language-button" type="button">ES <span>⌄</span></button>
+
+          <button class="settings-button" type="button" data-menu-toggle><img src="../../recursos/iconos/ajustes.svg" alt="" /> Ajustes</button>
+
+        </div>
+
+        <div class="settings-popover is-hidden" data-settings>
+
+          <strong>Tema</strong>
+
+          <div class="theme-options"><button type="button" data-theme-value="light">☼</button><button type="button" data-theme-value="dark">☾</button></div>
+
+          <hr />
+
+          <a href="../inicio-sesion/inicio-sesion.html">♙ &nbsp; Iniciar sesión</a>
+
+        </div>
+
+      </header>
+
+      <section class="menu-content">
+
+        <div class="menu-intro">
+
+          <span class="menu-kicker">Artesanal &amp; Local</span>
+
+          <h1>Explora Nuestro Menú</h1>
+
+          <p>Platos artesanales preparados con ingredientes locales de la más alta calidad.</p>
+
+        </div>
+
+        <div class="menu-tools">
+
+          <label class="search-box"><img src="../../recursos/iconos/buscar.svg" alt="" /><input type="search" placeholder="Buscar platos..." data-search /></label>
+
+          <nav class="category-tabs" aria-label="Categorías"><button class="is-active" data-category="all">Todos</button><button data-category="entradas">Entradas</button><button data-category="fuertes">Platos Fuertes</button><button data-category="postres">Postres</button></nav>
+
+        </div>
+
+        <section class="product-grid" data-productos></section>
+
+      </section>
+
+      <footer class="menu-footer"><p>© 2026 La Mesa. Todos los derechos reservados.</p><p>Política de Privacidad · Términos y Condiciones</p><p>Artesanal &amp; Local · Bogotá, Colombia</p><p>+57 123 456 7890</p></footer>
+
+    </main>
+
+    <script type="module" src="js/principal-app.js"></script>
+
+  </body>
+
+</html>

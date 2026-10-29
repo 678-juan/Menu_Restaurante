@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="es">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Registro de usuario de La Mesa" />
+
+    <title>La Mesa | Registro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/registro.css" />
+
+  </head>
+
+  <body>
+
+    <main class="auth-page" data-page="register">
+
+      <aside class="promo-panel">
+
+        <a class="promo-brand" href="../principal/principal.html"><span class="logo-badge logo-badge--small">M</span><span>La Mesa</span></a>
+
+        <div class="promo-content"><h1>La gastronomía es el reflejo de nuestra tierra.</h1><p>Únete a nuestra mesa para guardar tus platillos artesanales favoritos, calificar tus experiencias, y ser parte de nuestra comunidad local de buen comer.</p></div>
+
+        <div class="promo-meta"><span></span><small>Artesanal &amp; Local</small></div>
+
+      </aside>
+
+      <section class="auth-content">
+
+        <div class="mobile-status" aria-hidden="true"><span>9:41</span><span>◼︎ ◉ ▰</span></div>
+
+        <div class="auth-wrapper">
+
+          <header class="brand-header"><span class="logo-badge">M</span><div class="brand-name"><strong>La Mesa</strong><small>Artesanal &amp; Local</small></div></header>
+
+          <section class="screen">
+
+            <header class="screen-heading"><h2>Registro De Usuario</h2><p>Crea tu cuenta para gestionar el menú.</p></header>
+
+            <form class="auth-card" data-form="register">
+
+              <div class="fields">
+
+                <div class="field"><label for="register-name">Nombre Completo</label><div class="input-control"><span class="field-icon" aria-hidden="true">♙</span><input id="register-name" name="name" type="text" placeholder="Ingresa tu nombre completo" autocomplete="name" required /></div></div>
+
+                <div class="field"><label for="register-email">Correo Electrónico</label><div class="input-control"><img src="../../recursos/iconos/correo.svg" alt="" /><input id="register-email" name="email" type="email" placeholder="usuario@correo.com" autocomplete="email" required /></div></div>
+
+                <div class="field"><label for="register-password">Contraseña</label><div class="input-control"><img src="../../recursos/iconos/candado.svg" alt="" /><input id="register-password" name="password" type="password" placeholder="Crea una contraseña segura" minlength="8" autocomplete="new-password" required /><button class="icon-button password-toggle" type="button" aria-label="Mostrar contraseña"><img src="../../recursos/iconos/ojo.svg" alt="" /></button></div></div>
+
+                <div class="field"><label for="register-phone">Número de Teléfono</label><div class="input-control"><img src="../../recursos/iconos/telefono.svg" alt="" /><input id="register-phone" name="phone" type="tel" placeholder="+57 123 456 7890" autocomplete="tel" required /></div></div>
+
+              </div>
+
+              <button class="submit-button" type="submit">Crear Cuenta</button>
+
+              <p class="form-switch">¿Ya tienes una cuenta? <a href="../inicio-sesion/inicio-sesion.html">Iniciar Sesión</a></p>
+
+            </form>
+
+          </section>
+
+          <a class="back-home" href="../principal/principal.html"><img src="../../recursos/iconos/flecha-izquierda.svg" alt="" /> Volver al sitio web principal</a>
+
+        </div>
+
+        <footer class="auth-footer">© 2026 La Mesa. Todos los derechos reservados.</footer><p class="feedback" role="status" aria-live="polite"></p>
+
+      </section>
+
+    </main>
+
+    <script type="module" src="js/registro.js"></script>
+
+  </body>
+
+</html>

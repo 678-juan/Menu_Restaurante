@@ -1,0 +1,5 @@
+:root { --menu-bg:#faf8f5; --menu-surface:#fff; --menu-ink:#2a2421; --menu-copy:#6e6560; --menu-border:#ebe5df; --menu-accent:#c85a32; --menu-muted:#f5efe9; --menu-display:"Fraunces",Georgia,serif; --menu-body:"DM Sans",Arial,sans-serif; }
+
+* { box-sizing:border-box; } body { margin:0; background:var(--menu-bg); color:var(--menu-ink); font-family:var(--menu-body); } button,input { font:inherit; } button { cursor:pointer; } a { color:inherit; text-decoration:none; }.is-hidden { display:none !important; }
+
+.menu-page[data-theme="dark"] { --menu-bg:#1e1e1e; --menu-surface:#252525; --menu-ink:#fff; --menu-copy:rgba(255,255,255,.7); --menu-border:#343434; --menu-muted:#2a2a2a; }

@@ -1,0 +1,1 @@
+.screen-heading { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-bottom: 32px; text-align: center; }.screen-heading h2 { margin: 0; color: var(--color-ink); font: 700 28px var(--font-display); }.screen-heading p { max-width: 420px; margin: 0; color: var(--color-copy); font-size: 14px; line-height: 1.4; }

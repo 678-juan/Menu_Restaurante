@@ -1,0 +1,25 @@
+:root {
+
+  --color-background: #faf8f5;
+
+  --color-surface: #fff;
+
+  --color-ink: #2a2421;
+
+  --color-copy: #6e6560;
+
+  --color-placeholder: #9e948f;
+
+  --color-border: #ebe5df;
+
+  --color-accent: #c85a32;
+
+  --color-overlay: rgba(24, 19, 17, .65);
+
+  --font-display: "Fraunces", Georgia, serif;
+
+  --font-body: "DM Sans", Arial, sans-serif;
+
+  --shadow-card: 0 12px 16px rgba(42, 36, 33, .04);
+
+}
