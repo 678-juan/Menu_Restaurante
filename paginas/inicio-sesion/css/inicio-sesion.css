@@ -2,12 +2,12 @@
 
 @import url("../../../compartido/css/base/variables.css");
 
-@import url("../../../compartido/css/layout/auth-estructura.css");
+@import url("../../../compartido/css/estructura/estructura-autenticacion.css");
 
-@import url("../../../compartido/css/components/marca.css");
+@import url("../../../compartido/css/componentes/marca.css");
 
-@import url("../../../compartido/css/components/form.css");
+@import url("../../../compartido/css/componentes/formularios.css");
 
-@import url("../../../compartido/css/pages/pantallas-autenticacion.css");
+@import url("../../../compartido/css/paginas/pantallas-autenticacion.css");
 
-@import url("../../../compartido/css/responsive/auth-adaptable.css");
+@import url("../../../compartido/css/adaptable/adaptable-autenticacion.css");
