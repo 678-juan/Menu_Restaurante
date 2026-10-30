@@ -102,13 +102,14 @@
 
           <label>Imagen del plato</label>
 
-          <label class="upload-box"><img src="../../recursos/iconos/camara.svg" alt="" /><strong>Subir imagen del plato</strong><small>Formatos recomendados: JPG, PNG (Max 5MB)</small><input type="file" accept="image/png,image/jpeg" /></label>
+          <label class="upload-box"><img src="../../recursos/iconos/camara.svg" alt="" /><strong>Subir imagen del plato</strong><small>Formatos recomendados: JPG, PNG (Max 5MB)</small><input data-campo="imagen" type="file" accept="image/png,image/jpeg" /></label>
+          <img class="product-image is-hidden" data-vista-previa alt="Vista previa del producto" />
 
-          <label for="new-title">Título del plato</label><input id="new-title" type="text" placeholder="Ej: Risotto de Trufa y Hongos" required />
+          <label for="new-title">Título del plato</label><input id="new-title" data-campo="nombre" type="text" placeholder="Ej: Risotto de Trufa y Hongos" required />
 
-          <label for="new-description">Subtítulo / Descripción</label><textarea id="new-description" placeholder="Descripción detallada del plato, ingredientes clave, notas de cocción..." required></textarea>
+          <label for="new-description">Subtítulo / Descripción</label><textarea id="new-description" data-campo="descripcion" placeholder="Descripción detallada del plato, ingredientes clave, notas de cocción..." required></textarea>
 
-          <label for="new-price">Precio</label><div class="money-input"><span>$</span><input id="new-price" type="text" placeholder="Ej: 45,900" required /></div>
+          <label for="new-price">Precio</label><div class="money-input"><span>$</span><input id="new-price" data-campo="precio" type="text" inputmode="decimal" placeholder="Ej: 45,900" required /></div>
 
           <fieldset><legend>Etiqueta - Tipo de comida</legend><div class="tag-list"><button type="button">ENTRADA</button><button type="button">PLATO FUERTE</button><button type="button" class="is-active">POSTRE</button><button type="button">BEBIDAS</button><button type="button">SOPAS</button><button type="button">OTRA&nbsp; ⊕</button></div></fieldset>
 

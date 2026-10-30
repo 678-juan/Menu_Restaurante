@@ -47,12 +47,10 @@ export function configurarFormularios() {
         }
 
         if (form.dataset.form === "register") {
-          mostrarMensaje(feedback, respuesta.data.session
-            ? "Cuenta creada correctamente. Redirigiendo..."
-            : "Cuenta creada. Revisa tu correo para confirmar la cuenta.");
-          if (respuesta.data.session) {
-            window.location.href = "../principal/principal.html";
-          }
+          mostrarMensaje(feedback, "Cuenta creada. Revisa tu correo y luego inicia sesión.");
+          window.setTimeout(() => {
+            window.location.href = "../inicio-sesion/inicio-sesion.html";
+          }, 1200);
         } else {
           mostrarMensaje(feedback, "Inicio de sesión correcto. Redirigiendo...");
           const { perfil, error: errorPerfil } = await obtenerPerfil(respuesta.data.user.id);
